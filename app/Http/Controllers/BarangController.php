@@ -12,8 +12,8 @@ class BarangController extends Controller
      */
     public function index()
     {
-        $barang = Barang::all();
-        return view('barang.index', compact('barang'));
+        $daftarBarang = Barang::all();
+        return view('barang.index', compact('daftarBarang'));
     }
 
     /**
